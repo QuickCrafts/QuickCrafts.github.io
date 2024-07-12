@@ -3,10 +3,10 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    base: '/QuickFins_Web_v2/',
     integrations: [tailwind()],
-    site: 'https://www.quickfins.co',
-    output: 'static',
+    // @audit
+    // site: 'https://www.quickfins.co', needed DNS config and change repository name
+    site: 'https://quickcrafts.github.io/',
     build: {
         outDir: 'dist',
     },
